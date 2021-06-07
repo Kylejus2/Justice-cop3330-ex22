@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double n1, n2 , n3 ;
+        System.out.println("Enter the first number");
+        n1= input.nextDouble();
+        System.out.println("Enter the second number");
+        n2= input.nextDouble();
+        if(n1==n2)
+          System.exit(0);
+        System.out.println("Enter the third number");
+        n3= input.nextDouble();
+        if(n2==n3)
+          System.exit(0);
+        if(n1==n3)
+          System.exit(0);
+        if(n1 > n2) {
+            if(n1 > n3)
+                System.out.println(n1 + " is the largest number.");
+            else
+                System.out.println(n3 + " is the largest number.");
+        } else {
+            if(n2 > n3)
+                System.out.println(n2 + " is the largest number.");
+            else
+                System.out.println(n3 + " is the largest number.");
+        }
+    }
+}
